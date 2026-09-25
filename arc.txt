@@ -1,0 +1,68 @@
+eldorado-automation/
+│
+├── src/
+│   ├── app/                         # Angular Sidebar UI
+│   │   ├── core/
+│   │   │   ├── models/
+│   │   │   ├── services/
+│   │   │   └── constants/
+│   │   │
+│   │   ├── features/
+│   │   │   ├── dashboard/
+│   │   │   ├── automation/
+│   │   │   ├── message-templates/
+│   │   │   ├── pricing/
+│   │   │   ├── activity/
+│   │   │   └── settings/
+│   │   │
+│   │   ├── shared/
+│   │   │   ├── components/
+│   │   │   └── ui/
+│   │   │
+│   │   └── app.component.ts
+│   │
+│   ├── extension/
+│   │   ├── background/
+│   │   │   └── service-worker.ts
+│   │   │
+│   │   ├── content/
+│   │   │   ├── content-script.ts
+│   │   │   ├── observer.ts
+│   │   │   └── page-bridge.ts
+│   │   │
+│   │   ├── eldorado/
+│   │   │   ├── selectors.ts
+│   │   │   ├── request-parser.ts
+│   │   │   ├── request-detector.ts
+│   │   │   ├── offer-automation.ts
+│   │   │   └── chat-automation.ts
+│   │   │
+│   │   ├── messaging/
+│   │   │   ├── messages.ts
+│   │   │   └── message-bus.ts
+│   │   │
+│   │   └── storage/
+│   │       └── extension-storage.ts
+│   │
+│   ├── models/
+│   │   ├── request.model.ts
+│   │   ├── settings.model.ts
+│   │   └── activity.model.ts
+│   │
+│   └── environments/
+│
+├── public/
+│   ├── manifest.json
+│   └── icons/
+│
+├── docs/
+│   ├── ARCHITECTURE.md
+│   ├── ELDORADO-DOM.md
+│   ├── AUTOMATION-FLOW.md
+│   └── DEVELOPMENT.md
+│
+├── AGENTS.md
+├── package.json
+├── angular.json
+├── tsconfig.json
+└── README.md

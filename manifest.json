@@ -1,0 +1,8 @@
+{
+  "manifest_version": 3,
+  "name": "Eldorado Automation",
+  "version": "0.1.0",
+  "description": "Eldorado seller automation assistant",
+  "permissions": ["storage", "tabs", "scripting"],
+  "host_permissions": ["https://*.eldorado.gg/*"]
+}
