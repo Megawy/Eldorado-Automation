@@ -1,0 +1,1 @@
+export function observePage(onChange: () => void): MutationObserver { const observer = new MutationObserver(onChange); observer.observe(document.body, { childList: true, subtree: true }); return observer; }

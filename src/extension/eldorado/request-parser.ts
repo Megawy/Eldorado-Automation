@@ -1,0 +1,2 @@
+import { EldoradoRequest } from '../../models/request.model';
+export function parseRequest(element: Element): EldoradoRequest | undefined { const id = element.getAttribute('data-request-id'); if (!id) return undefined; return { id, game: element.getAttribute('data-game') ?? 'Unknown game', product: element.getAttribute('data-product') ?? 'Unknown product', buyerName: element.getAttribute('data-buyer') ?? 'Unknown buyer', quantity: Number(element.getAttribute('data-quantity') ?? 1), receivedAt: new Date().toISOString(), status: 'pending' }; }
