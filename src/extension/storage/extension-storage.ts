@@ -1,0 +1,2 @@
+export interface ExtensionStorage { get<T>(key: string): Promise<T | undefined>; set<T>(key: string, value: T): Promise<void>; }
+export const extensionStorage: ExtensionStorage = { async get<T>(key: string) { const value = globalThis.localStorage?.getItem(key); return value === null || value === undefined ? undefined : JSON.parse(value) as T; }, async set<T>(key: string, value: T) { globalThis.localStorage?.setItem(key, JSON.stringify(value)); } };
